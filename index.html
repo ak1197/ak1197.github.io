@@ -4,27 +4,123 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bootstrap 101: Learn Bootstrap in 60 minutes by Bootstrapious.com</title>
+    <title>::Arunkumar::</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
     <!-- Tweaks for older IEs-->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 
 <body>
+    <nav class="navbar navbar-light navbar-expand-lg shadow-sm bg-white">
+        <a href="index.html" class="navbar-brand">Bio Graphy</a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Testimonials</a></li>
+            </ul>
+            <div class="navbar-text ml-lg-3">
+                <a href="#" class="btn btn-primary text-white shadow">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1><b>ARUNKUMAR</b></h1>
+                    <p>A Full stack Developer cum Integrator</p>
+                </div>
+                <div class="col-lg-5" align="center">
+                    <img src="images/arun.png" alt="Display Picture" class="img-responsive img-rounded" width="150px" height="150px" style="border-radius:70px;" />
+                </div>
+            </div>
 
-    <h1>Hello world. I'm in Bootstrap!</h1>
+        </div>
+    </div>
+    <!-- Hero Section-->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <h1>Profile</h1>
+                            <p class="lead">
+                                Started career as a .NET programmer in Web application development and moving towards business analysis in client base development after working as a cloud service Technical Assistance in Microsoft Azure and Cloud/On-premise Server Management.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <h1>Objective</h1>
+                            <p class="lead">
+                                To become a Solution Architect in Information Technology for machine critical environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-blue">
+                        <div class="card">
+                            <div class="card-header"><h2>Contact</h2></div>
+                            <div class="card-body">
+                                <p><label><i class="fa fa-desktop"></i></label>arunkumar.ak1197@gmail.com</p>
+                                <p><label>Mobile:</label>+91 8056 550667</p>
+                            </div>
+                        </div>
 
-    <!-- JavaScript files-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Portfolio-->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Educational</h2>
+            <p class="lead text-muted mb-5">Details</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow border-0 h-100">
+                        <a href="#"><img src="images/school.png" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h5> <a href="#" class="text-dark">High School</a></h5>
+                            <p class="text-muted card-text">Completed SSLC and obtained 90 % marks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow border-0 h-100">
+                        <a href="#"><img src="images/school.png" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h5> <a href="#" class="text-dark">Higher Secondary</a></h5>
+                            <p class="text-muted card-text">Completed HSC and Otained 92.25 % marks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow border-0 h-100">
+                        <a href="#"><img src="images/degree.png" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h5> <a href="#" class="text-dark">Under Graduate</a></h5>
+                            <p class="text-muted card-text">Completed UG(ECE) and Obtained 7.24 CGPA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
