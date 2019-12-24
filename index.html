@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="akApp">
 
 <head>
     <meta charset="utf-8">
@@ -14,22 +14,19 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Custom stylesheet - for your changes-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="js/ak.js"></script>
     <!-- Tweaks for older IEs-->
 </head>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-lg shadow-sm bg-white">
+<body ng-controller="ak">
+    <nav class="navbar fixed-top navbar-expand-lg shadow-sm navbar-dark bg-primary">
         <a href="index.html" class="navbar-brand">Bio Graphy</a>
         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal">Feedback</a></li>
             </ul>
-            <div class="navbar-text ml-lg-3">
-                <a href="#" class="btn btn-primary text-white shadow">Sign Up</a>
-            </div>
         </div>
     </nav>
     <div class="bg-light">
@@ -47,122 +44,150 @@
 
             </div>
         </div>
-        <section class="bg-light">
-            <br />
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-lg-8 order-2 order-lg-1">
-                                <h1>Profile</h1>
-                                <p class="lead">
-                                    Started career as a .NET programmer in Web application development and moving towards business analysis in client base development after working as a cloud service Technical Assistance in Microsoft Azure and Cloud/On-premise Server Management.
-                                </p>
-                            </div>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <div class="col-lg-8 order-2 order-lg-1">
-                                <h1>Objective</h1>
-                                <p class="lead">
-                                    To become a Solution Architect in Information Technology for machine critical environments.
-                                </p>
-                            </div>
+        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <h1>Profile</h1>
+                            <p class="lead">
+                                Started career as a .NET programmer in Web application development and moving towards business analysis in client base development after working as a cloud service Technical Assistance in Microsoft Azure and Cloud/On-premise Server Management.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <br />
-                        <div class="panel panel-blue">
-                            <div class="card text-white bg-primary">
-                                <div class="card-header"><h2>Contact</h2></div>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        E-Mail
-                                    </h5>
-                                    <p>arunkumar.ak1197@gmail.com</p>
-                                    <h5 class="card-title">
-                                        Mobile
-                                    </h5>
-                                    <p>+91 8056 550667</p>
-                                </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <h1>Objective</h1>
+                            <p class="lead">
+                                To become a Solution Architect in Information Technology for machine critical environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <br />
+                    <div class="panel panel-blue">
+                        <div class="card text-white bg-primary">
+                            <div class="card-header"><h2>Contact</h2></div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    E-Mail
+                                </h5>
+                                <p>arunkumar.ak1197@gmail.com</p>
+                                <h5 class="card-title">
+                                    Mobile
+                                </h5>
+                                <p>+91 8056 550667</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <br />
+        <div class="container">
+            <h1>Academic</h1>
             <br />
-            <div class="container">
-                <h1>Academic</h1>
-                <br />
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card shadow border-0 h-100">
-                            <a href="#"><img src="images/school.png" alt="" class="card-img-top"></a>
-                            <div class="card-body">
-                                <h5> <a href="#" class="text-dark">High School</a></h5>
-                                <p class="text-muted card-text">Completed SSLC and obtained 90 % marks</p>
-                            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow border-0 h-100">
+                        <a href="#"><img src="images/school.png" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h5> <a href="#" class="text-dark">High School</a></h5>
+                            <p class="text-muted card-text">Completed SSLC and obtained 90 % marks</p>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card shadow border-0 h-100">
-                            <br /> <br /> <br /> <br />
-                            <a href="#"><img src="images/hsc.png" alt="" class="card-img-top"></a> <br /> <br />
-                            <div class="card-body">
-                                <h5> <a href="#" class="text-dark">Higher Secondary</a></h5>
-                                <p class="text-muted card-text">Completed HSC and Otained 92.25 % marks</p>
-                            </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow border-0 h-100">
+                        <br /> <br /> <br /> <br />
+                        <a href="#"><img src="images/hsc.png" alt="" class="card-img-top"></a> <br /> <br />
+                        <div class="card-body">
+                            <h5> <a href="#" class="text-dark">Higher Secondary</a></h5>
+                            <p class="text-muted card-text">Completed HSC and Otained 92.25 % marks</p>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card shadow border-0 h-100">
-                            <a href="#"><img src="images/degree.png" alt="" class="card-img-top"></a>
-                            <div class="card-body">
-                                <h5> <a href="#" class="text-dark">Under Graduate</a></h5>
-                                <p class="text-muted card-text">Completed UG(ECE) and Obtained 7.24 CGPA</p>
-                            </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow border-0 h-100">
+                        <a href="#"><img src="images/degree.png" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h5> <a href="#" class="text-dark">Under Graduate</a></h5>
+                            <p class="text-muted card-text">Completed UG(ECE) and Obtained 7.24 CGPA</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="bg-light">
-            <div class="container">
-                <h1>Academic Projects</h1>
-                <br />
-                <p>
-                    <div class="row" align="center">
-                        <div class="col-6">
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Major Project</button>
-                        </div>
-                        <div class="col-6">
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Minor Project</button>
-                        </div>
-                    </div>
-                </p>
-                <div class="row">
+        </div>
+        <div class="container">
+            <h1>Academic Projects</h1>
+            <br />
+            <p>
+                <div class="row" align="center">
                     <div class="col-6">
-                        <div class="collapse multi-collapse" id="multiCollapseExample1">
-                            <div class="card card-body">
-                                <h6 align="center">Design and Simulaion of FullAdder in Cadence tool</h6>
-                                In our Major project, we used Cadence as a design and simulation platform which is run on Linux server and client mechanism.
-                                It comes under VLSI Domain. In the major factors of VLSI (Size, Speed, Power), we focused on Size and we designed a full Adder that reduced the existing design size of the same.
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Major Project</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Minor Project</button>
+                    </div>
+                </div>
+            </p>
+            <div class="row">
+                <div class="col-6">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            <h6 align="center">Design and Simulaion of FullAdder in Cadence tool</h6>
+                            In our Major project, we used Cadence as a design and simulation platform which is run on Linux server and client mechanism.
+                            It comes under VLSI Domain. In the major factors of VLSI (Size, Speed, Power), we focused on Size and we designed a full Adder that reduced the existing design size of the same.
 
-                            </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="collapse multi-collapse" id="multiCollapseExample2">
-                            <div class="card card-body">
-                                <h6 align="center">Shortest Path Finding System in C</h6>
-                                In our minor project, we selected graphics in C language and our aim is to find the shortest path from the origin to the destination.
-                                We used Dijkstra's algorithm for the purpose of finding the path. We plotted the shortest path among multiple paths using C graphics library.
-                            </div>
+                </div>
+                <div class="col-6">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            <h6 align="center">Shortest Path Finding System in C</h6>
+                            In our minor project, we selected graphics in C language and our aim is to find the shortest path from the origin to the destination.
+                            We used Dijkstra's algorithm for the purpose of finding the path. We plotted the shortest path among multiple paths using C graphics library.
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thanks for the Visit !</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>If you like to give any feedback to me, please provide it here.</p><br />
+                    <form novalidate="" name="feedbackform" ng-model="form1" style="padding:20px;">
+                        <div class="form-group">
+                            <label><b>Name</b></label><span>*</span>
+                            <input class="form-control" type="text" ng-model="vistorName" name="vistorName" required />
+                        </div>
+                        <div class="form-group">
+                            <label><b>E-mail</b></label><span>*</span>
+                            <input class="form-control" type="email" ng-model="visitorEmail" name="visitorEmail" required />
+                        </div>
+                        <div class="form-group">
+                            <label><b>Comments</b></label><span>*</span>
+                            <textarea class="form-control" type="text" ng-model="visitorComment" name="visitorComment" required> </textarea>
+                        </div>
+                        <div>
+                            <button type="submit" ng-disabled="feedbackform.$invalid"  class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
