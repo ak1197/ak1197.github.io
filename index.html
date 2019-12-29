@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>::Arunkumar::</title>
+    <title>:: Arunkumar ::</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -17,6 +17,8 @@
     <!-- Custom stylesheet - for your changes-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script type="text/javascript" src="js/ak.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
     <!-- Tweaks for older IEs-->
 </head>
 
@@ -32,11 +34,11 @@
     </nav>
     <div class="bg-light">
         <div class="container-fluid row">
-            <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="col-lg-8 col-md-8 col-sm-8 animated-fade" >
                 <br /><br />
-                <div class="jumbotron" style="height:300px;">
-                    <div class="row">
-                        <div class="col-lg-7">
+                <div class="jumbotron" style="height:300px;" >
+                    <div class="row" >
+                        <div class="col-lg-7" >
                             <br /><br />
                             <h1 class="text-center"><b>ARUNKUMAR</b></h1>
                             <p class="text-center">A Full stack Developer cum Integrator</p>
@@ -341,7 +343,7 @@
                     <form novalidate="" name="feedbackform" ng-model="form1" style="padding:20px;">
                         <div class="form-group">
                             <label><b>Name</b></label><span>*</span>
-                            <input class="form-control" type="text" ng-model="vistorName" name="vistorName" required />
+                            <input class="form-control" type="text" ng-model="visitorName" name="visitorName" required />
                         </div>
                         <div class="form-group">
                             <label><b>E-mail</b></label><span>*</span>
@@ -352,7 +354,7 @@
                             <textarea class="form-control" type="text" ng-model="visitorComment" name="visitorComment" required> </textarea>
                         </div>
                         <div>
-                            <button type="submit" ng-disabled="feedbackform.$invalid" class="btn btn-primary">Submit</button>
+                            <button type="submit" ng-disabled="feedbackform.$invalid" class="btn btn-primary" ng-click="save()">Submit</button>
                         </div>
                     </form>
                 </div>
