@@ -363,9 +363,9 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <p>If you like to give any feedback to me, please provide it here.</p><br />
+                <div class="modal-body">                  
                     <form novalidate="" name="feedbackform" ng-model="form1" style="padding:20px;">
+                        <p>If you like to give any feedback to me, please provide it here.</p>
                         <div class="form-group">
                             <label><b>Name</b></label><span>*</span>
                             <input class="form-control" type="text" ng-model="visitorName" name="visitorName" required />
@@ -375,7 +375,7 @@
                             <input class="form-control" type="email" ng-model="visitorEmail" name="visitorEmail" required />
                         </div>
                         <div class="form-group">
-                            <label><b>Comments</b></label><span>*</span>
+                            <label><b>Comment</b></label><span>*</span>
                             <textarea class="form-control" type="text" ng-model="visitorComment" name="visitorComment" required> </textarea>
                         </div>
                         <div>
