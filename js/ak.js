@@ -1,17 +1,10 @@
-﻿var akApp = angular.module('akApp', []);
-akApp.controller('ak', function ($scope) {
-    $scope.save = function () {
-        console.log($scope.visitorName, $scope.visitorEmail, $scope.visitorComment);
-        Email.send({
-            Host: "smtp.yourisp.com",
-            Username: "username",
-            Password: "password",
-            To: 'them@website.com',
-            From: "you@isp.com",
-            Subject: "This is the subject",
-            Body: "And this is the body"
-        }).then(
-            message => alert(message)
-        );
-    };
-});
+﻿
+$(document).ready(function(){
+    var startDate = new Date(2018,5,20)
+    var duration = moment.duration(moment().diff(startDate),'milliseconds').as('years').toFixed(2)
+    document.getElementById('txtExperience').innerHTML = '('+ duration + 'years)'
+})
+
+$('#feedbackForm').on('submit', function(e){
+    e.preventDefault()
+})

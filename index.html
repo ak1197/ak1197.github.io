@@ -10,63 +10,52 @@
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- Custom stylesheet - for your changes-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <!-- Google adsense -->
-    <script data-ad-client="ca-pub-3868135805895836" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Tweaks for older IEs-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/ak.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
-<body ng-controller="ak">
+<body>
     <nav class="navbar fixed-top navbar-expand-lg shadow-sm navbar-dark bg-primary">
         <a href="index.html" class="navbar-brand">Bio-Graphy</a>
-        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal">Feedback</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal"
+                        data-target="#feedbackModal">Feedback</a></li>
             </ul>
         </div>
     </nav>
-    <div class="bg-light">
-        <div class="container-fluid row">
-            <div class="col-lg-8 col-md-8 col-sm-8 animated-fade">
-                <br /><br />
-                <div class="jumbotron" style="height:300px;">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <br /><br />
-                            <h1 class="text-center"><b>ARUNKUMAR</b></h1>
-                            <p class="text-center">A Full stack Developer cum Integrator</p>
-                        </div>
-                        <div class="col-lg-5" align="center">
-                            <img src="images/arun.png" alt="Display Picture" class="img-responsive img-rounded" width="150px" height="150px" style="border-radius:70px;" />
-                        </div>
-                    </div>
+    <div class="bg-white">
+        <div class="container">
+            <img src="images/welcome.jpg" alt="Display Picture" />
+        </div>
+        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-lg-2" align="right">
+                    <img src="images/arun.png" alt="Display Picture" class="rounded-circle" width="150px"
+                        height="150px" />
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <br /><br /><br />
-                <div class="panel panel-blue" style="height:300px;">
-                    <div class="card text-white" style="background-color:#61a4fa;">
-                        <div class="card-header"><h2><i class="fas fa-address-card"></i> Contact</h2></div>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="fas fa-envelope"></i>
-                                E-Mail
-                            </h5>
-                            <p>arunkumar.ak1197@gmail.com</p>
-                            <h5 class="card-title">
-                                <i class="fas fa-mobile-alt"></i>
-                                Mobile
-                            </h5>
-                            <p>+91 8056 550667</p>
-                        </div>
-                    </div>
+                <div class="col-lg-4">
+                    <h3>ARUNKUMAR</h3>
+                    <p class="text-muted">Full stack & Azure Developer</p>
+                    <h6 class="display-5">
+                        <i class="fas fa-envelope mr-2"></i>
+                        arunkumar.ak1197@gmail.com
+                    </h6>
+                    <h6 class="display-5">
+                        <i class="fas fa-mobile-alt mr-2"></i>
+                        +91 7904 907267
+                    </h6>
                 </div>
+                <div class="col-3"></div>
             </div>
         </div>
         <br />
@@ -74,19 +63,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-lg-8 order-2 order-lg-1">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
                             <h1>Profile</h1>
-                            <p class="lead">
-                                Started career as a .NET programmer in Web application development and moving towards business analysis in client base development after working as a cloud service Technical Assistance in Microsoft Azure and Cloud/On-premise Server Management.
+                            <p class="lead text-justify">
+                                Started career as a .NET programmer in Web application development and moving towards
+                                business analysis in client base development after working as a cloud service Technical
+                                Assistance in Microsoft Azure and Cloud/On-premise Server Management.
                             </p>
                         </div>
                     </div>
                     <br />
                     <div class="row">
-                        <div class="col-lg-8 order-2 order-lg-1">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
                             <h1>Objective</h1>
-                            <p class="lead">
-                                To become a Solution Architect in Information Technology for machine critical environments.
+                            <p class="lead text-justify">
+                                To become a Solution Architect in Information Technology for machine critical
+                                environments.
                             </p>
                         </div>
                     </div>
@@ -96,91 +88,174 @@
         </div>
         <br />
         <div class="container">
-            <h1>Work Experience</h1>
+            <h1>Work Experience <small class="display-5" id="txtExperience"></small></h1>
             <br />
             <div class="card border-info">
-                <div class="card-body text-info">
-                    <h4><i class="fas fa-briefcase"></i> Vcidex Solutions Pvt Ltd.</h4>
-                    <p class="text-muted"><span><i class="fas fa-map-marker-alt"></i></span> NSIC STP, Guindy, Chennai<br /><b><i class="fas fa-calendar-alt"></i> [2018-2020]</b></p>
-                    <h6 class="card-title"><b>Major Role</b> -Full Stack Programer</h6>
-                    <p>Plays not only the delveloper role other than that Research & Development, System Integration, Business Analysis and Client Base development for design critical environments.</p>
+                <div class="card-body">
+                    <h4 class="card-title"><i class="fas fa-building"></i> CSS Corp Pvt Ltd.</h4>
+                    <h6 class="card-title"><i class="fas fa-briefcase"></i> <b>Job Title</b> - Engineer</h6>
+                    <p class="text-muted"><span><i class="fas fa-map-marker-alt"></i></span> Ambit IT Park, Ambattur
+                        Industrial Estate,
+                        Chennai<br /><b><i class="fas fa-calendar-alt"></i> [2020- Till Date]</b></p>
+                    <div class="card rounded-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Project - Caribbean based finance application</h6>
+                            <ul>
+                                <li>Worked as an azure developer in the entire application lifecycle</li>
+                                <li>Application mangement on Azure server-less environment.</li>
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="row" style="padding:10px;">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="card shadow" style="background-color:#9cbcf0;">
-                            <div class="card-body">
-                                <h5 class="card-title">Programing Languages</h5>
-                                <p>
-                                    <ul>
-                                        <li>Microsoft Dot Net (C# and Visual Basic)</li>
-                                        <li>Javascript (Angular JS & NodeJS-Entry Level)</li>
-                                        <li>Typescript - Entry level</li>
-                                        <li>Ajax & JQuery</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="card shadow" style="background-color:#9cbcf0;">
-                            <div class="card-body">
-                                <h5 class="card-title">Worked Areas</h5>
-                                <p>
-                                    <ul>
-                                        <li>Web Applications(Front and Back End)</li>
-                                        <li>Static Websites</li>
-                                        <li>Windows forms & Console Applications</li>
-                                        <li>Web API</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="card shadow" style="background-color:#9cbcf0;">
-                            <div class="card-body">
-                                <h5 class="card-title">Roles Played</h5>
-                                <p>
-                                    <ul>
-                                        <li>Microsoft Azure Management</li>
-                                        <li>Application Designing</li>
-                                        <li>Research and Development</li>
-                                        <li>Deployment</li>
-                                        <li>Server Management(Windows & Linux (Plesk))</li>
-                                    </ul>
-                                </p>
-                            </div>
+            </div>
+            <br />
+            <div class="card border-info">
+                <div class="card-body">
+                    <h4 class="card-title"><i class="fas fa-building"></i> Vcidex Solutions Pvt Ltd.</h4>
+                    <h6 class="card-title"><i class="fas fa-briefcase"></i> <b>Job Title</b> - Software Programmer</h6>
+                    <p class="text-muted"><span><i class="fas fa-map-marker-alt"></i></span> NSIC STP, Guindy,
+                        Chennai<br /><b><i class="fas fa-calendar-alt"></i> [2018-2020]</b></p>
+
+                    <div class="card rounded-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Product (India Based ERP)</h6>
+                            <ul>
+                                <li>Worked as a core research and developer in certain modules like Procurement,
+                                    Finance, Asset, HRMS</li>
+                                <li>Also worked as a Azure Iaas Manager for various clients.</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <br />
         <div class="container">
-<h2>Certifications</h2>
-<br />
-<div class="card border-dark">
-    <div class="card-header">
-      <h4>
-          <span style="padding-right:10px;">
-            <img src="images/microsoft-logo.png" alt="microsoft-logo" width="25px" height="25px"  />
-        </span>Microsoft</h4>
-    </div>
-    <div class="card-body text-dark">
-    <div class="row" style="padding: 20px;">
-        <div class="col-sm-6 col-lg-2 col-md-2 align-self-center">
-            <img src="images/az900.png" alt="Certificate logo" width="100px" height="100px"/>  
+            <h2>Roles Played</h2>
+            <br />
+            <div class="card border-dark">
+                <div class="card-body">
+                    <ul>
+                        <li>Application Developer</li>
+                        <li>IIS Deployment and Management</li>
+                        <li>Azure Developer</li>
+                        <li>Azure Iaas, Paas Management</li>
+                        <li>Azure DevOps Management</li>
+                        <li>Microsoft 365, G-Suite Management</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-6 col-lg-10 col-md-10">                  
-          <h5 class="card-title">AZ-900</h5>
-          <p class="card-text "><h6>Microsoft Azure Fundamentals.</h6>
-            Cloud concepts, Core Azure services, Security, Privacy, Compliance and Trust, Azure pricing and Support.</p>
-        </div> 
-       
-        </div>  
-    </div>  
-    </div>
-  </div>
+        <br />
+        <div class="container">
+            <h2>Platforms Known</h2>
+            <br />
+            <div class="row">
+                <div class="col">
+                    <div class="card border-dark" style="height: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Back-End <small>(C#, VB.Net)</small></h5>
+                            <ul class="list-group ">
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                                    ASP.Net MVC <span class="badge badge-primary badge-pill">2.5 years</span></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                                    ASP.Net Core MVC <span class="badge badge-primary badge-pill">1.5 years</span></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                                    Web API <span class="badge badge-primary badge-pill">3.0 years</span></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                                    MsSQL, MySQL <span class="badge badge-primary badge-pill">2.5 years</span></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-dark" style="height: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Front-End</h5>
+                            <ul class="list-group ">
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                                    AngularJs <span class="badge badge-primary badge-pill">1.5 years</span></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                                    Javascript <span class="badge badge-primary badge-pill">2.5
+                                        years</span></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                                    JQuery, AJAX <span class="badge badge-primary badge-pill">1.5 years</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-dark" style="height: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud</h5>
+                            <ul class="list-group ">
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                                    Microsoft Azure <span class="badge badge-primary badge-pill">2.5 years</span></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                                    AWS <span class="badge badge-primary badge-pill">Entry level</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br />
+        <div class="container">
+            <h2>Hands-on Tools</h2>
+            <br />
+            <div class="card border-dark" style="height: 14rem;">
+                <div class="card-body">
+                    <ul class="list-group ">
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">Visual
+                            Studio IDE(2010, 2012, 2013, 2015, 2017, 2019)<span
+                                class="badge badge-primary badge-pill">3.2 years</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">Visual
+                            Studio Code<span class="badge badge-primary badge-pill">2.5 years</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">Azure
+                            DevOps<span class="badge badge-primary badge-pill">1.2 years</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">Source
+                            Control (Git, Azure Repo, Visual SVN)<span class="badge badge-primary badge-pill">2.7
+                                years</span></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <h2>Certifications</h2>
+            <br />
+            <div class="card border-dark">
+                <div class="card-header">
+                    <h4>
+                        <span style="padding-right:10px;">
+                            <img src="images/microsoft-logo.png" alt="microsoft-logo" width="25px" height="25px" />
+                        </span>Microsoft
+                    </h4>
+                </div>
+                <div class="card-body text-dark">
+                    <div class="row" style="padding: 20px;">
+                        <div class="col-sm-6 col-lg-2 col-md-2 align-self-center">
+                            <img src="images/az900.png" alt="Certificate logo" width="100px" height="100px" />
+                        </div>
+                        <div class="col-sm-6 col-lg-10 col-md-10">
+                            <h5 class="card-title">AZ-900</h5>
+                            <p class="card-text ">
+                            <h6>Microsoft Azure Fundamentals.</h6>
+                            Cloud concepts, Core Azure services, Security, Privacy, Compliance and Trust, Azure pricing
+                            and Support.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <br />
         <div class="container">
             <h2>Skills(Self Estimation)</h2>
@@ -192,15 +267,19 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
                         </div>
                     </div>
                 </div>
                 <div class="card-body row">
-                    <div class="col-lg-4"> <h6 class="text-info"><i class="fas fa-business-time"></i> Business Analysing</h6></div>
+                    <div class="col-lg-4">
+                        <h6 class="text-info"><i class="fas fa-business-time"></i> Business Analysing</h6>
+                    </div>
                     <div class="col-lg-6">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
                         </div>
                     </div>
                 </div>
@@ -210,7 +289,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
                         </div>
                     </div>
                 </div>
@@ -220,7 +300,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
                         </div>
                     </div>
                 </div>
@@ -230,7 +311,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
                         </div>
                     </div>
                 </div>
@@ -240,7 +322,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">30%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">30%</div>
                         </div>
                     </div>
                 </div>
@@ -250,7 +333,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
                         </div>
                     </div>
                 </div>
@@ -266,7 +350,8 @@
                     <div class="card shadow border-info h-100">
                         <div class="card-body text-info">
                             <h5><i class="fas fa-graduation-cap"></i> Under Graduate</h5>
-                            <p class="text-muted"><span><i class="fas fa-map-marker-alt"></i></span> Einstein College of Engineering, Tirunelveli.</p>
+                            <p class="text-muted"><span><i class="fas fa-map-marker-alt"></i></span> Einstein College of
+                                Engineering, Tirunelveli.</p>
                             <p class="text-muted"><i class="fas fa-calendar-alt"></i> [2014-2018]</p>
                             <p class="card-text">Completed UG(ECE) and Obtained 7.24 CGPA</p>
                         </div>
@@ -277,7 +362,8 @@
                     <div class="card shadow border-primary h-100">
                         <div class="card-body text-primary">
                             <h5><i class="fas fa-building"></i> Higher Secondary</h5>
-                            <p class="text-muted"><span><i class="fas fa-map-marker-alt"></i></span> Ramaswamy Pillai Higher Secondary School, Ilanji, Tenkasi.</p>
+                            <p class="text-muted"><span><i class="fas fa-map-marker-alt"></i></span> Ramaswamy Pillai
+                                Higher Secondary School, Ilanji, Tenkasi.</p>
                             <p class="text-muted"><i class="fas fa-calendar-alt"></i> [2012-2014]</p>
                             <p class="card-text">Completed HSC and Otained 92.25 % marks</p>
                         </div>
@@ -287,7 +373,8 @@
                     <div class="card shadow border-success h-100">
                         <div class="card-body text-success">
                             <h5><i class="fas fa-school"></i> High School</h5>
-                            <p class="text-muted"><span><i class="fas fa-map-marker-alt"></i></span> Annai Theresa R.C Higher Secondary School, Vallam, Tenkasi.</p>
+                            <p class="text-muted"><span><i class="fas fa-map-marker-alt"></i></span> Annai Theresa R.C
+                                Higher Secondary School, Vallam, Tenkasi.</p>
                             <p class="text-muted"><i class="fas fa-calendar-alt"></i> [2002-2012]</p>
                             <p class="card-text">Completed SSLC and obtained 90 % marks</p><br />
                         </div>
@@ -302,10 +389,12 @@
             <div class="card border-default">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="major-tab" data-toggle="tab" href="#major" role="tab" aria-controls="home" aria-selected="true">Major</a>
+                        <a class="nav-link active" id="major-tab" data-toggle="tab" href="#major" role="tab"
+                            aria-controls="home" aria-selected="true">Major</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="minor-tab" data-toggle="tab" href="#minor" role="tab" aria-controls="profile" aria-selected="false">Minor</a>
+                        <a class="nav-link" id="minor-tab" data-toggle="tab" href="#minor" role="tab"
+                            aria-controls="profile" aria-selected="false">Minor</a>
                     </li>
                 </ul>
                 <br />
@@ -313,34 +402,24 @@
                     <div class="tab-pane fade show active" id="major" role="tabpanel" aria-labelledby="major-tab">
                         <h6 align="center">Design and Simulaion of FullAdder in Cadence tool</h6>
                         <p style="padding:15px;">
-                            In our Major project, we used Cadence as a design and simulation platform which is run on Linux server and client mechanism.
-                            It comes under VLSI Domain. In the major factors of VLSI (Size, Speed, Power), we focused on Size and we designed a full Adder that reduced the existing design size of the same.
+                            In our Major project, we used Cadence as a design and simulation platform which is run on
+                            Linux server and client mechanism.
+                            It comes under VLSI Domain. In the major factors of VLSI (Size, Speed, Power), we focused on
+                            Size and we designed a full Adder that reduced the existing design size of the same.
                         </p>
                     </div>
                     <div class="tab-pane fade" id="minor" role="tabpanel" aria-labelledby="minor-tab">
                         <h6 align="center">Shortest Path Finding System in C</h6>
                         <p style="padding:15px;">
-                            In our minor project, we selected graphics in C language and our aim is to find the shortest path from the origin to the destination.
-                            We used Dijkstra's algorithm for the purpose of finding the path. We plotted the shortest path among multiple paths using C graphics library.
+                            In our minor project, we selected graphics in C language and our aim is to find the shortest
+                            path from the origin to the destination.
+                            We used Dijkstra's algorithm for the purpose of finding the path. We plotted the shortest
+                            path among multiple paths using C graphics library.
                         </p>
                     </div>
 
                 </div>
             </div>
-        </div>
-
-        <br />
-        <div class="container">
-            <h1>Hobbies</h1>
-            <p class="text-secondary">
-                <ul>
-                    <li>Surfing on Web</li>
-                    <li>Learn about new Technologies</li>
-                    <li>Laptop Service</li>
-                    <li>Explore Tourism</li>
-                    <li>Bike Ride</li>
-                </ul>
-            </p>
         </div>
     </div>
     <!-- Footer -->
@@ -349,43 +428,49 @@
             <div class="row">
                 <div class="col-md-12 mt-md-0 mt-3">
                     <h5 class="text-uppercase">Thanks For Your Visit...</h5>
-                    <p>Please provide your feedback <i class="text-warning fas fa-smile-beam"></i></p>
+                    <p>Please provide your <a href="#" data-toggle="modal" data-target="#feedbackModal">feedback</a> <i
+                            class="text-warning fas fa-smile-beam"></i></p>
                 </div>
             </div>
         </div>
     </footer>
+    </div>
     <!-- Footer -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <!--Feedback Modal-->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Thanks for the Visit !</h5>
+                    <h5 class="modal-title" id="feedbackModalLabel">Thanks for the Visit !</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">                  
-                    <form novalidate="" name="feedbackform" ng-model="form1" style="padding:20px;">
-                        <p>If you like to give any feedback to me, please provide it here.</p>
+                <div class="modal-body">
+                    <form id="feedbackForm">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">Your feedback matters</p>
+                        </blockquote>
                         <div class="form-group">
-                            <label><b>Name</b></label><span>*</span>
-                            <input class="form-control" type="text" ng-model="visitorName" name="visitorName" required />
+                            <input placeholder="Your name" class="form-control" type="text" id="txtName" required />
                         </div>
                         <div class="form-group">
-                            <label><b>E-mail</b></label><span>*</span>
-                            <input class="form-control" type="email" ng-model="visitorEmail" name="visitorEmail" required />
+                            <input placeholder="Your Email" class="form-control" type="email" id="txtEmail" required />
                         </div>
                         <div class="form-group">
-                            <label><b>Comment</b></label><span>*</span>
-                            <textarea class="form-control" type="text" ng-model="visitorComment" name="visitorComment" required> </textarea>
+                            <textarea placeholder="Describe your comments here..." class="form-control" id="txtFeedback"
+                                required> </textarea>
                         </div>
-                        <div>
-                            <button type="submit" ng-disabled="feedbackform.$invalid" class="btn btn-primary" ng-click="save()">Submit</button>
+                        <div class="float-right">
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
+
 </html>
